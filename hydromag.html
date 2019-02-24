@@ -1,43 +1,44 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!doctype html>
+<html lang="en">
 <html>
     <head>
         <title>Przykład</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <style type="text/css">
-            div.dymek
-            {
-                display: none;
-                position: absolute;
-                top: 100px;
-                left: 50px;
-                width: 200px;
-                height: 100px;
-                border: solid 1px black;
-                background: red;
-            }
-            
-            ol
-            {
-                font-family: "Times New Roman";
-                font-size: 15px;
-                color: black;
-                text-align: left;
-                font-weight: normal;
-                margin-left: 15px;
-                margin-top: 15px;   
-            }
-            
-            li.dymek:hover div.dymek
-            {
-                display: block;
-            }
+           body { 
+		background-image: url("brick.png");
+		background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+		} 
+		h1 {
+		font-size: 300%;
+		background-color: rgba(255, 255, 255, 0.9);
+		text-align: center;
+		}
+		h2 {
+		font-size: 150%;
+		background-color: rgba(255, 255, 255, 0.9);
+		text-align: center;
+		}
+		.note {
+		font-size: 500%;
+		color: red;
+		}
         </style>
     </head>
-    <body>
-        <p>Po najechaniu na element listy powinien czasem wyświetlić się div</p>
-        <ol>
-            <li class="dymek">Po najechaniu tutaj powinien wyświetlić się czasem div
-                <div class="dymek"><p>Wyświetliłem się tutaj:)</p></div></li>
-        </ol>
+    <body> 
+        <h1>ZAKŁAD USŁUGOWO REMONTOWY "HYDROMAG" 
+		MAJEWSKI JANUSZ</h1><br/><br/><br/><br/>
+		<h2>ul. Brzozowa 2
+		62-095 Murowana Goślina <br/>
+		601743578
+		</h2><br/><br/>
+		
+		<p class="kontakt">
+		<h2>Kontakt</h2>
+		<a href="mailto:jasm0012@interia.pl"> <h2> Masz pytanie? Napisz do nas </h2></a>
+		</p>
+
     </body>
 </html>
