@@ -34,16 +34,34 @@
 		text-align: center;
 		font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
 		}
-		ol {
+		ul {
 		text-align: center;
 		font-weight: bold ;
 		font-size: 175%;
 		background-color: rgba(255, 255, 255, 0.9);
+		padding-bottom: 20px;
 		}
-		ul {
+		.bar li {
+		list-style: none;
+		list-style: none; //inside url("gwiaz.jpg")
 		font-size: 60%;
 		text-align: left;
 		padding-bottom: 20px;
+		}
+		p.hvr {
+        display: none;
+        position: static;
+        border: none;
+        background-color: none;
+		font-size: 80%;
+		bottom: 3.2em;
+		left: 3.5em;
+	
+		}
+		li.hvr:hover p.hvr {
+		color: blue;
+		display: inline;
+		float: left;
 		}
         </style>
     </head>
@@ -54,17 +72,21 @@
 		62-095 Murowana Goślina <br/>
 		601743578
 		</h2><br/><br/>
-		<ol>Oferujemy:
-		<ul>Konserwacja</ul>
-		<ul>Montaż</ul>
-		<ul>Budownictwo</ul>
-		</ol></br>
+		<ul class="bar">Oferujemy:
+		<li class="hvr">Konserwacja
+		<p class="hvr">Okresowe pomiary i kontrole stanu instalacji elektrycznych powinny wskazywać miejsca gdzie może nastąpić awaria.</p></li><br/><br/>
+		<li class="hvr">Montaż
+		<p class="hvr">W procesie produkcyjnym montaż polega na połączeniu ze sobą gotowych elementów (tzw. półfabrykatów) dostarczanych do fabryki w relacji od kooperantów, którzy produkują poszczególne elementy według opracowanych i uzgodnionych kryteriów technicznych potrzebnych do powstania produktu końcowego – jako całości. W celu zapewnienia odpowiedniej jakości produktu, fabryka w oparciu o rysunek techniczny, który dostarcza, podpisuje umowy z kooperantami zawierające wszelkie dane techniczne m.in. wymiary półproduktu z podaniem klasy tolerancji, jakości użytego materiału; odporności na przeciążenia i zmęczenia materiału.</p></li><br/>
+		<li class="hvr">Budownictwo
+		<p class="hvr">Aby budowanie domu przebiegało sprawnie i najmniej obciążało kieszeń inwestora, koniecznie dobrze zaplanuj kolejne etapy budowy. Pokazujemy przykładowy harmonogram prac. W naszym zestawieniu uwzględniamy, co trzeba zrobić na danym etapie budowy, co skontrolować, a co przygotować już do następnego.</p></li></br>
+		<li> &nbsp </li>
+		</ul></br></br></br>
 		<div class="kontakt">
 		<h3>Kontakt</h3>
 		<a href="mailto:jasm0012@interia.pl"> <h2> Masz pytanie? Napisz do nas </h2></a>
 		<br/>
 		<h3>Jesteśmy do dyspozycji od poniedziałku do piątku w godzinach 08-17</h3>
 		</div>
-
+<input type="checkbox">LOW
     </body>
 </html>
