@@ -4,23 +4,34 @@
     <head>
         <title>Przykład</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script>
+		function flash(id, kolor, czas, kolor2, czas2)
+		{
+		document.getElementById(id).style.color = kolor;
+		setTimeout('flash("' + id + '","' + kolor2 + '",' + czas2 + ',"' + kolor + '",' + czas + ')', czas);
+		}
+		</script>
         <style type="text/css">
            body { 
 		background-image: url("brick.png");
 		background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
+		text-decoration: blink;
 		} 
 		h1 {
-		font-size: 300%;
+		font-size: 350%;
 		background-color: rgba(255, 255, 255, 0.9);
 		text-align: center;
+		font-family: Impact;
 		}
 		h2 {
 		font-size: 150%;
 		background-color: rgba(255, 255, 255, 0.9);
 		text-align: center;
 		padding: 20px 0px 20px 0px;
+		border-style: solid;
+		border-color: red;
 		}
 		h3 {
 		text-align: center;
@@ -66,9 +77,11 @@
         </style>
     </head>
     <body> 
-        <h1>ZAKŁAD USŁUGOWO REMONTOWY "HYDROMAG" 
-		MAJEWSKI JANUSZ</h1><br/><br/><br/><br/>
-		<h2>ul. Brzozowa 2
+        <h1><div id="idn">ZAKŁAD USŁUGOWO REMONTOWY "HYDROMAG" 
+		MAJEWSKI JANUSZ</div><script>
+		flash("idn", "black", 800 , "blue", 800);
+		</script></h1><br/><br/><br/><br/>
+		<h2>ul. Brzozowa 2,
 		62-095 Murowana Goślina <br/>
 		601743578
 		</h2><br/><br/>
@@ -76,11 +89,11 @@
 		<li class="hvr">Konserwacja
 		<p class="hvr">Okresowe pomiary i kontrole stanu instalacji elektrycznych powinny wskazywać miejsca gdzie może nastąpić awaria.</p></li><br/><br/>
 		<li class="hvr">Montaż
-		<p class="hvr">W procesie produkcyjnym montaż polega na połączeniu ze sobą gotowych elementów (tzw. półfabrykatów) dostarczanych do fabryki w relacji od kooperantów, którzy produkują poszczególne elementy według opracowanych i uzgodnionych kryteriów technicznych potrzebnych do powstania produktu końcowego – jako całości. W celu zapewnienia odpowiedniej jakości produktu, fabryka w oparciu o rysunek techniczny, który dostarcza, podpisuje umowy z kooperantami zawierające wszelkie dane techniczne m.in. wymiary półproduktu z podaniem klasy tolerancji, jakości użytego materiału; odporności na przeciążenia i zmęczenia materiału.</p></li><br/>
+		<p class="hvr">W procesie produkcyjnym montaż polega na połączeniu ze sobą gotowych elementów (tzw. półfabrykatów) dostarczanych do fabryki w relacji od kooperantów, którzy produkują poszczególne elementy według opracowanych i uzgodnionych kryteriów technicznych potrzebnych do powstania produktu końcowego – jako całości. W celu zapewnienia odpowiedniej jakości produktu, fabryka w oparciu o rysunek techniczny, który dostarcza, podpisuje umowy z kooperantami zawierające wszelkie dane techniczne m.in. wymiary półproduktu z podaniem klasy tolerancji, jakości użytego materiału; odporności na przeciążenia i zmęczenia materiału.</p></li><br/><br/>
 		<li class="hvr">Budownictwo
 		<p class="hvr">Aby budowanie domu przebiegało sprawnie i najmniej obciążało kieszeń inwestora, koniecznie dobrze zaplanuj kolejne etapy budowy. Pokazujemy przykładowy harmonogram prac. W naszym zestawieniu uwzględniamy, co trzeba zrobić na danym etapie budowy, co skontrolować, a co przygotować już do następnego.</p></li></br>
 		<li> &nbsp </li>
-		</ul></br></br></br>
+		</ul></br></br>
 		<div class="kontakt">
 		<h3>Kontakt</h3>
 		<a href="mailto:jasm0012@interia.pl"> <h2> Masz pytanie? Napisz do nas </h2></a>
